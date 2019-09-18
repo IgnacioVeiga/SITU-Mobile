@@ -8,16 +8,29 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    // inicio
     path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./pages/list/list.module').then(m => m.ListPageModule)
+    // noticias
+    path: 'news',
+    loadChildren: () => import('./pages/news/news.module').then(m => m.NewsPageModule)
   },
   {
-    path: 'blank-page',
-    loadChildren: () => import('./pages/blank-page/blank-page.module').then(m => m.BlankPageModule)
+    // horarios
+    path: 'schedule',
+    loadChildren: () => import('./pages/schedule/schedule.module').then(m => m.SchedulePageModule)
+  },
+  {
+    // quejas/denuncias
+    path: 'complaint',
+    loadChildren: () => import('./pages/complaint/complaint.module').then(m => m.ComplaintPageModule)
+  },
+  {
+    // trafico
+    path: 'traffic',
+    loadChildren: () => import('./pages/traffic/traffic.module').then(m => m.TrafficPageModule)
   }
 ];
 

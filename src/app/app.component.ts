@@ -15,16 +15,6 @@ export class AppComponent {
       title: 'Inicio',
       url: '/home',
       icon: 'home'
-    },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    },
-    {
-      title: 'Blank',
-      url: '/blank-page',
-      icon: 'book'
     }
   ];
 

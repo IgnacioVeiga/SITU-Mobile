@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-import { BlankPage } from './blank.page';
-
+import { SchedulePage } from './schedule.page';
 
 @NgModule({
   imports: [
@@ -14,10 +13,10 @@ import { BlankPage } from './blank.page';
     RouterModule.forChild([
       {
         path: '',
-        component: BlankPage
+        component: SchedulePage
       }
     ])
   ],
-  declarations: [BlankPage]
+  declarations: [SchedulePage]
 })
-export class BlankPageModule { }
+export class SchedulePageModule { }
