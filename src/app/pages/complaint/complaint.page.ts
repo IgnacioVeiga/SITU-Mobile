@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-complaint',
@@ -6,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ComplaintPage {
 
-  constructor() {
+  constructor(
+    private router: Router
+  ) { }
+
+  goHome() {
+    this.router.navigate(['home']);
   }
 
 }

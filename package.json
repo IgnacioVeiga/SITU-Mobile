@@ -1,7 +1,7 @@
 {
   "name": "tp6",
   "version": "0.0.1",
-  "author": "Ionic Framework",
+  "author": "Grupo Martes Tarde",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
@@ -56,5 +56,5 @@
     "tslint": "~5.15.0",
     "typescript": "~3.4.3"
   },
-  "description": "An Ionic project"
+  "description": "App creada en Ionic 4"
 }

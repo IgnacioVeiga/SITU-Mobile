@@ -6,8 +6,98 @@
     <ion-title>
       Noticias
     </ion-title>
+    <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-searchbar placeholder="Buscar noticias..." animated inputmode="search"></ion-searchbar>
+  <!-- <ion-label *ngIf="expression">No hay resultados con la busqueda</ion-label> -->
+  <ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>
+
+  <div *ngIf="!loading">
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="3">
+            <ion-thumbnail>
+              <ion-img src="/assets/miniatura.jpg" alt="miniatura"></ion-img>
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col size="9">
+            <ion-text color="dark">
+              <h2>Paro de transporte</h2>
+            </ion-text>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sem ut vivamus tortor in tincidunt metus...
+            </small>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="3">
+            <ion-thumbnail>
+              <ion-img src="/assets/miniatura.jpg" alt="miniatura"></ion-img>
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col size="9">
+            <ion-text color="dark">
+              <h2>Paro de transporte</h2>
+            </ion-text>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sem ut vivamus tortor in tincidunt metus...
+            </small>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="3">
+            <ion-thumbnail>
+              <ion-img src="/assets/miniatura.jpg" alt="miniatura"></ion-img>
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col size="9">
+            <ion-text color="dark">
+              <h2>Paro de transporte</h2>
+            </ion-text>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sem ut vivamus tortor in tincidunt metus...
+            </small>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-row>
+          <ion-col size="3">
+            <ion-thumbnail>
+              <ion-img src="/assets/miniatura.jpg" alt="miniatura"></ion-img>
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col size="9">
+            <ion-text color="dark">
+              <h2>Paro de transporte</h2>
+            </ion-text>
+            <small>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit,
+              sem ut vivamus tortor in tincidunt metus...
+            </small>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
 </ion-content>
