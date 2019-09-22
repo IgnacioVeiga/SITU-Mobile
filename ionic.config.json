@@ -1,5 +1,7 @@
 {
   "name": "tp6",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
