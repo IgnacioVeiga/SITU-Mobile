@@ -4,28 +4,48 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
     // inicio
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    loadChildren: './home/home.module#HomePageModule'
   },
   {
     // noticias
     path: 'news',
-    loadChildren: () => import('./pages/news/news.module').then(m => m.NewsPageModule)
+    loadChildren: './pages/news/news.module#NewsPageModule'
   },
   {
     // horarios
     path: 'schedule',
-    loadChildren: () => import('./pages/schedule/schedule.module').then(m => m.SchedulePageModule)
+    loadChildren: './pages/schedule/schedule.module#SchedulePageModule'
   },
   {
-    // quejas/denuncias
+    // denuncias
     path: 'complaint',
-    loadChildren: () => import('./pages/complaint/complaint.module').then(m => m.ComplaintPageModule)
+    loadChildren: './pages/complaint/complaint.module#ComplaintPageModule'
+  },
+  {
+    // informacion
+    path: 'info',
+    loadChildren: './pages/info/info.module#InfoPageModule'
+  },
+  {
+    // ayuda
+    path: 'help',
+    loadChildren: './pages/help/help.module#HelpPageModule'
+  },
+  {
+    // ingresar
+    path: 'login',
+    loadChildren: './pages/user/login/login.module#LoginPageModule'
+  },
+  {
+    // registrar
+    path: 'register',
+    loadChildren: './pages/user/register/register.module#RegisterPageModule'
   }
 ];
 

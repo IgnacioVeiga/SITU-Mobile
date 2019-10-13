@@ -10,7 +10,7 @@
 <ion-content>
   <ion-card class="welcome-card">
     <ion-card-header>
-      <ion-img src="/assets/bus.jpg" alt=""></ion-img>
+      <ion-img src="/assets/bus.jpg"></ion-img>
       <ion-card-title>Bienvenido</ion-card-title>
     </ion-card-header>
 
@@ -27,17 +27,17 @@
 
     <ion-item (click)="goTo('complaint')">
       <ion-icon slot="start" name="warning" color="medium"></ion-icon>
-      <ion-label class="ion-text-wrap">Hacer una queja/denuncia</ion-label>
+      <ion-label class="ion-text-wrap">Hacer una denuncia</ion-label>
     </ion-item>
 
     <ion-item (click)="goTo('schedule')">
       <ion-icon slot="start" name="clock" color="medium"></ion-icon>
-      <ion-label class="ion-text-wrap">Consultar horarios de una línea</ion-label>
+      <ion-label class="ion-text-wrap">Horarios de los recorridos</ion-label>
     </ion-item>
 
     <ion-item (click)="goTo('news')">
       <ion-icon slot="start" name="paper" color="medium"></ion-icon>
-      <ion-label class="ion-text-wrap">Noticias</ion-label>
+      <ion-label class="ion-text-wrap">Noticias o alertas</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>

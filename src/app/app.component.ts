@@ -17,7 +17,7 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Quejas/Denuncias',
+      title: 'Denuncias',
       url: '/complaint',
       icon: 'warning'
     },
@@ -27,9 +27,19 @@ export class AppComponent {
       icon: 'clock'
     },
     {
-      title: 'Noticias',
+      title: 'Noticias o alertas',
       url: '/news',
       icon: 'paper'
+    },
+    {
+      title: 'Información',
+      url: '/info',
+      icon: 'information-circle-outline'
+    },
+    {
+      title: 'Ayuda',
+      url: '/help',
+      icon: 'help-buoy'
     }
   ];
 
