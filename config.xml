@@ -2,7 +2,7 @@
 <widget id="com.situ.mobile" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>SITU Mobile</name>
     <description>Sistema Integral de Transporte Urbano</description>
-    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <author email="hi@ionicframework.com" href="http://ionicframework.com/">Grupo Martes Tarde</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
