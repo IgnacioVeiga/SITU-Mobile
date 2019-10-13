@@ -17,8 +17,8 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Denuncias',
-      url: '/complaint',
+      title: 'Hacer denuncia',
+      url: '/create-complaint',
       icon: 'warning'
     },
     {
@@ -28,7 +28,7 @@ export class AppComponent {
     },
     {
       title: 'Noticias o alertas',
-      url: '/news',
+      url: '/alerts',
       icon: 'paper'
     },
     {

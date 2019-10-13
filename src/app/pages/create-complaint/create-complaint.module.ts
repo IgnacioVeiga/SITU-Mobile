@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
-import { ComplaintPage } from './complaint.page';
+import { CreateComplaintPage } from './create-complaint.page';
 
 @NgModule({
   imports: [
@@ -13,10 +13,10 @@ import { ComplaintPage } from './complaint.page';
     RouterModule.forChild([
       {
         path: '',
-        component: ComplaintPage
+        component: CreateComplaintPage
       }
     ])
   ],
-  declarations: [ComplaintPage]
+  declarations: [CreateComplaintPage]
 })
-export class ComplaintPageModule { }
+export class CreateComplaintPageModule { }

@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { InformationDTO } from './news.models';
+import { InformationDTO } from './alerts.models';
 
 @Component({
-  selector: 'app-news',
-  templateUrl: 'news.page.html'
+  selector: 'app-alerts',
+  templateUrl: 'alerts.page.html'
 })
-export class NewsPage implements OnInit {
+export class AlertsPage implements OnInit {
   loading: boolean;
   news: InformationDTO[] = [];
 

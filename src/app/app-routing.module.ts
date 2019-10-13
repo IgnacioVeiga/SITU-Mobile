@@ -7,46 +7,55 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full'
   },
+
+  // todos
   {
-    // inicio
+    // inicio (todos)
     path: 'home',
     loadChildren: './home/home.module#HomePageModule'
   },
   {
-    // noticias
-    path: 'news',
-    loadChildren: './pages/news/news.module#NewsPageModule'
+    // mi perfil (todos)
+    path: 'my-profile',
+    loadChildren: './pages/user/my-profile/my-profile.module#MyProfilePageModule'
   },
   {
-    // horarios
-    path: 'schedule',
-    loadChildren: './pages/schedule/schedule.module#SchedulePageModule'
+    // ingresar (todos)
+    path: 'login',
+    loadChildren: './pages/user/login/login.module#LoginPageModule'
+  },
+
+  // pasajero
+  {
+    // registrar (pasajero)
+    path: 'register',
+    loadChildren: './pages/user/register/register.module#RegisterPageModule'
   },
   {
-    // denuncias
-    path: 'complaint',
-    loadChildren: './pages/complaint/complaint.module#ComplaintPageModule'
+    // denunciar (pasajero)
+    path: 'create-complaint',
+    loadChildren: './pages/create-complaint/create-complaint.module#CreateComplaintPageModule'
   },
   {
-    // informacion
+    // informacion (pasajero)
     path: 'info',
     loadChildren: './pages/info/info.module#InfoPageModule'
   },
   {
-    // ayuda
+    // ayuda (pasajero)
     path: 'help',
     loadChildren: './pages/help/help.module#HelpPageModule'
   },
   {
-    // ingresar
-    path: 'login',
-    loadChildren: './pages/user/login/login.module#LoginPageModule'
+    // noticias o alertas (pasajero)
+    path: 'alerts',
+    loadChildren: './pages/alerts/alerts.module#AlertsPageModule'
   },
   {
-    // registrar
-    path: 'register',
-    loadChildren: './pages/user/register/register.module#RegisterPageModule'
-  }
+    // horarios (pasajero)
+    path: 'schedule',
+    loadChildren: './pages/schedule/schedule.module#SchedulePageModule'
+  },
 ];
 
 @NgModule({
