@@ -26,11 +26,6 @@ const routes: Routes = [
     // quejas/denuncias
     path: 'complaint',
     loadChildren: () => import('./pages/complaint/complaint.module').then(m => m.ComplaintPageModule)
-  },
-  {
-    // trafico
-    path: 'traffic',
-    loadChildren: () => import('./pages/traffic/traffic.module').then(m => m.TrafficPageModule)
   }
 ];
 
