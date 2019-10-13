@@ -1,5 +1,14 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { HomePage } from './home/home.page';
+import { MyProfilePage } from './pages/user/my-profile/my-profile.page';
+import { LoginPage } from './pages/user/login/login.page';
+import { RegisterPage } from './pages/user/register/register.page';
+import { CreateComplaintPage } from './pages/create-complaint/create-complaint.page';
+import { InfoPage } from './pages/info/info.page';
+import { HelpPage } from './pages/help/help.page';
+import { AlertsPage } from './pages/alerts/alerts.page';
+import { SchedulePage } from './pages/schedule/schedule.page';
 
 const routes: Routes = [
   {
@@ -12,56 +21,54 @@ const routes: Routes = [
   {
     // inicio (todos)
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
+    component: HomePage
   },
   {
     // mi perfil (todos)
     path: 'my-profile',
-    loadChildren: './pages/user/my-profile/my-profile.module#MyProfilePageModule'
+    component: MyProfilePage
   },
   {
     // ingresar (todos)
     path: 'login',
-    loadChildren: './pages/user/login/login.module#LoginPageModule'
+    component: LoginPage
   },
 
   // pasajero
   {
     // registrar (pasajero)
     path: 'register',
-    loadChildren: './pages/user/register/register.module#RegisterPageModule'
+    component: RegisterPage
   },
   {
     // denunciar (pasajero)
     path: 'create-complaint',
-    loadChildren: './pages/create-complaint/create-complaint.module#CreateComplaintPageModule'
+    component: CreateComplaintPage
   },
   {
     // informacion (pasajero)
     path: 'info',
-    loadChildren: './pages/info/info.module#InfoPageModule'
+    component: InfoPage
   },
   {
     // ayuda (pasajero)
     path: 'help',
-    loadChildren: './pages/help/help.module#HelpPageModule'
+    component: HelpPage
   },
   {
     // noticias o alertas (pasajero)
     path: 'alerts',
-    loadChildren: './pages/alerts/alerts.module#AlertsPageModule'
+    component: AlertsPage
   },
   {
     // horarios (pasajero)
     path: 'schedule',
-    loadChildren: './pages/schedule/schedule.module#SchedulePageModule'
+    component: SchedulePage
   },
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
