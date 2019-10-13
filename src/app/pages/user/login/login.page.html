@@ -8,5 +8,57 @@
 </ion-header>
 
 <ion-content>
+  <form class="form-signin">
+    <div class="card p-4">
 
+      <ion-row class="mb-2">
+        <ion-img slot="medium" style="width: 120px" alt="SITU logo" src="/assets/logo.png"></ion-img>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="3"></ion-col>
+        <ion-col size="4">
+          <ion-img  style="width: 120px" alt="SITU logo" src="/assets/logo.png"></ion-img>
+        </ion-col>
+        <ion-col size="2"></ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <!-- <input type="text" id="dni" class="form-control mb-2" placeholder="DNI"> -->
+          <ion-input placeholder="DNI"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <!-- <input type="password" id="password" class="form-control mb-2" placeholder="Contraseña"> -->
+          <ion-input placeholder="Contraseña" type="password"></ion-input>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-img width="100" alt="recaptcha" src="/assets/recaptcha.png"></ion-img>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-checkbox></ion-checkbox> Mantener sesión
+        </ion-col>
+      </ion-row>
+
+      <!-- <button type="button" class="btn btn-primary btn-block" (click)="goTo('home')">Ingresar</button> -->
+      <ion-button color="primary" expand="block">Ingresar</ion-button>
+
+      <!-- <button type="button" class="btn btn-secondary btn-block" (click)="goTo('home')">Omitir</button> -->
+      <ion-button color="medium" expand="block">Omitir</ion-button>
+
+      <ion-row>
+        ¿No tenés una cuenta? <a (click)="goTo('register')"><span
+            class="text-primary show-pointer">Registrate</span></a>
+      </ion-row>
+    </div>
+  </form>
 </ion-content>
