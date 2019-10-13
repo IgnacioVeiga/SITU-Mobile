@@ -30,12 +30,7 @@ export class AppComponent {
       title: 'Noticias',
       url: '/news',
       icon: 'paper'
-    },
-    {
-      title: 'Tráfico',
-      url: '/traffic',
-      icon: 'bus'
-    },
+    }
   ];
 
   constructor(
