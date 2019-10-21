@@ -6,6 +6,9 @@ import { Router } from '@angular/router';
   templateUrl: 'create-complaint.page.html'
 })
 export class CreateComplaintPage {
+  otraFH = false;
+  otroLugar = false;
+  colectivoEspecifico = false;
 
   constructor(
     private router: Router
