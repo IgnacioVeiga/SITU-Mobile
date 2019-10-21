@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { InformationDTO } from './alerts.models';
+import { InformationDTO } from '../../models/modelos';
 
 @Component({
-  selector: 'app-alerts',
-  templateUrl: 'alerts.page.html'
+  selector: 'app-noticias-alertas',
+  templateUrl: 'noticias-alertas.page.html'
 })
-export class AlertsPage implements OnInit {
+export class NoticiasAlertasPage implements OnInit {
   loading: boolean;
   news: InformationDTO[] = [];
 
@@ -36,7 +36,7 @@ export class AlertsPage implements OnInit {
   }
 
   goHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['inicio']);
   }
 
 }

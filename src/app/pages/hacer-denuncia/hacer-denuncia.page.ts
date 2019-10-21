@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-create-complaint',
-  templateUrl: 'create-complaint.page.html'
+  selector: 'app-hacer-denuncia',
+  templateUrl: 'hacer-denuncia.page.html'
 })
-export class CreateComplaintPage {
+export class HacerDenunciaPage {
   otraFH = false;
   otroLugar = false;
   colectivoEspecifico = false;
@@ -15,7 +15,7 @@ export class CreateComplaintPage {
   ) { }
 
   goHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['inicio']);
   }
 
 }

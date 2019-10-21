@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-help',
-  templateUrl: './help.page.html'
+  selector: 'app-ayuda',
+  templateUrl: './ayuda.page.html'
 })
-export class HelpPage {
+export class AyudaPage {
 
   constructor(
     private router: Router
   ) { }
 
   goHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['inicio']);
   }
 
 }

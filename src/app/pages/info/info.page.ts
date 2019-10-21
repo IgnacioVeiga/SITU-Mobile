@@ -13,7 +13,7 @@ export class InfoPage {
   ) { }
 
   goHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['inicio']);
   }
 
 }

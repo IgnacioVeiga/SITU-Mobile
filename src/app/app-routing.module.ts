@@ -1,69 +1,60 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home/home.page';
-import { MyProfilePage } from './pages/user/my-profile/my-profile.page';
-import { LoginPage } from './pages/user/login/login.page';
-import { RegisterPage } from './pages/user/register/register.page';
-import { CreateComplaintPage } from './pages/create-complaint/create-complaint.page';
+import { InicioPage } from './inicio/inicio.page';
+import { MiPerfilPage } from './pages/usuario/mi-perfil/mi-perfil.page';
+import { IngresarPage } from './pages/usuario/ingresar/ingresar.page';
+import { RegistrarsePage } from './pages/usuario/registrarse/registrarse.page';
+import { HacerDenunciaPage } from './pages/hacer-denuncia/hacer-denuncia.page';
 import { InfoPage } from './pages/info/info.page';
-import { HelpPage } from './pages/help/help.page';
-import { AlertsPage } from './pages/alerts/alerts.page';
-import { SchedulePage } from './pages/schedule/schedule.page';
+import { AyudaPage } from './pages/ayuda/ayuda.page';
+import { NoticiasAlertasPage } from './pages/noticias-alertas/noticias-alertas.page';
+import { HorariosPage } from './pages/horarios/horarios.page';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: '/ingresar',
     pathMatch: 'full'
   },
 
   // todos
   {
-    // inicio (todos)
-    path: 'home',
-    component: HomePage
+    path: 'inicio',
+    component: InicioPage
   },
   {
-    // mi perfil (todos)
-    path: 'my-profile',
-    component: MyProfilePage
+    path: 'mi-perfil',
+    component: MiPerfilPage
   },
   {
-    // ingresar (todos)
-    path: 'login',
-    component: LoginPage
+    path: 'ingresar',
+    component: IngresarPage
   },
 
   // pasajero
   {
-    // registrar (pasajero)
-    path: 'register',
-    component: RegisterPage
+    path: 'registrarse',
+    component: RegistrarsePage
   },
   {
-    // denunciar (pasajero)
-    path: 'create-complaint',
-    component: CreateComplaintPage
+    path: 'hacer-denuncia',
+    component: HacerDenunciaPage
   },
   {
-    // informacion (pasajero)
     path: 'info',
     component: InfoPage
   },
   {
-    // ayuda (pasajero)
-    path: 'help',
-    component: HelpPage
+    path: 'ayuda',
+    component: AyudaPage
   },
   {
-    // noticias o alertas (pasajero)
-    path: 'alerts',
-    component: AlertsPage
+    path: 'noticias-alertas',
+    component: NoticiasAlertasPage
   },
   {
-    // horarios (pasajero)
-    path: 'schedule',
-    component: SchedulePage
+    path: 'horarios',
+    component: HorariosPage
   },
 ];
 

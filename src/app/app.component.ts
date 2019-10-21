@@ -14,22 +14,22 @@ export class AppComponent {
   public appPages = [ // sidebar
     {
       title: 'Inicio',
-      url: '/home',
+      url: '/inicio',
       icon: 'home'
     },
     {
       title: 'Hacer denuncia',
-      url: '/create-complaint',
+      url: '/hacer-denuncia',
       icon: 'warning'
     },
     {
       title: 'Horarios',
-      url: '/schedule',
+      url: '/horarios',
       icon: 'clock'
     },
     {
       title: 'Noticias o alertas',
-      url: '/alerts',
+      url: '/noticias-alertas',
       icon: 'paper'
     },
     {
@@ -39,7 +39,7 @@ export class AppComponent {
     },
     {
       title: 'Ayuda',
-      url: '/help',
+      url: '/ayuda',
       icon: 'help-buoy'
     }
   ];

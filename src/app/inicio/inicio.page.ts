@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html'
+  selector: 'app-inicio',
+  templateUrl: 'inicio.page.html'
 })
-export class HomePage {
+export class InicioPage {
   /*
   esta es la pantalla de inicio,
   tanto para pasajeros como choferes

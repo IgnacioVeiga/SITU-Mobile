@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-schedule',
-  templateUrl: 'schedule.page.html'
+  selector: 'app-mi-perfil',
+  templateUrl: './mi-perfil.page.html'
 })
-export class SchedulePage {
+export class MiPerfilPage {
 
   constructor(
     private router: Router
   ) { }
 
   goHome() {
-    this.router.navigate(['home']);
+    this.router.navigate(['inicio']);
   }
 
 }

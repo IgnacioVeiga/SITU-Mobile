@@ -9,28 +9,28 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HomePage } from './home/home.page';
-import { AlertsPage } from './pages/alerts/alerts.page';
-import { CreateComplaintPage } from './pages/create-complaint/create-complaint.page';
-import { HelpPage } from './pages/help/help.page';
+import { InicioPage } from './inicio/inicio.page';
+import { NoticiasAlertasPage } from './pages/noticias-alertas/noticias-alertas.page';
+import { HacerDenunciaPage } from './pages/hacer-denuncia/hacer-denuncia.page';
+import { AyudaPage } from './pages/ayuda/ayuda.page';
 import { InfoPage } from './pages/info/info.page';
-import { SchedulePage } from './pages/schedule/schedule.page';
-import { LoginPage } from './pages/user/login/login.page';
-import { RegisterPage } from './pages/user/register/register.page';
-import { MyProfilePage } from './pages/user/my-profile/my-profile.page';
+import { HorariosPage } from './pages/horarios/horarios.page';
+import { IngresarPage } from './pages/usuario/ingresar/ingresar.page';
+import { RegistrarsePage } from './pages/usuario/registrarse/registrarse.page';
+import { MiPerfilPage } from './pages/usuario/mi-perfil/mi-perfil.page';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePage,
-    AlertsPage,
-    CreateComplaintPage,
-    HelpPage,
+    InicioPage,
+    NoticiasAlertasPage,
+    HacerDenunciaPage,
+    AyudaPage,
     InfoPage,
-    SchedulePage,
-    LoginPage,
-    RegisterPage,
-    MyProfilePage
+    HorariosPage,
+    IngresarPage,
+    RegistrarsePage,
+    MiPerfilPage
   ],
   entryComponents: [],
   imports: [
