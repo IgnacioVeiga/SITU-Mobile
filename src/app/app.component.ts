@@ -29,7 +29,7 @@ export class AppComponent {
     },
     {
       title: 'Noticias o alertas',
-      url: '/noticias-alertas',
+      url: '/noticias-alertas/noticias',
       icon: 'paper'
     },
     {

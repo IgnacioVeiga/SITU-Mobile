@@ -1,7 +1,7 @@
 {
   "name": "situ-mobile",
-  "version": "0.0.2",
-  "author": "Grupo Martes Tarde",
+  "version": "0.0.5",
+  "author": "M.T Technologies",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",

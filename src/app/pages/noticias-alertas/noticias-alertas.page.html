@@ -1,44 +1,12 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Noticias/Alertas
-    </ion-title>
-    <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <ion-searchbar placeholder="Buscar noticias..." animated inputmode="search"></ion-searchbar>
-  <ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>
-
-  <div *ngIf="!loading">
-    <ion-card *ngFor="let info of news">
-      <ion-card-content>
-        <ion-row>
-          <ion-col size="3">
-            <ion-thumbnail>
-              <ion-img src="{{info.thumbnail}}" alt="miniatura"></ion-img>
-            </ion-thumbnail>
-          </ion-col>
-          <ion-col size="9">
-            <ion-text color="dark">
-              <h2>{{info.title}}
-                <ion-icon name="open"></ion-icon>
-              </h2>
-            </ion-text>
-            <small>
-              {{info.subtitle}}
-            </small>
-          </ion-col>
-          <ion-col>
-            {{info.source}} - {{info.date | date: 'dd/MM/yyyy'}}
-          </ion-col>
-        </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-  </div>
-</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="noticias">
+      <ion-label>Noticias</ion-label>
+      <ion-icon name="paper"></ion-icon>
+    </ion-tab-button>
+    <ion-tab-button tab="alertas">
+      <ion-label>Alertas</ion-label>
+      <ion-icon name="notifications"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

@@ -7,8 +7,8 @@ import { RegistrarsePage } from './pages/usuario/registrarse/registrarse.page';
 import { HacerDenunciaPage } from './pages/hacer-denuncia/hacer-denuncia.page';
 import { InfoPage } from './pages/info/info.page';
 import { AyudaPage } from './pages/ayuda/ayuda.page';
-import { NoticiasAlertasPage } from './pages/noticias-alertas/noticias-alertas.page';
 import { HorariosPage } from './pages/horarios/horarios.page';
+import { NoticiasAlertasPage } from './pages/noticias-alertas/noticias-alertas.page';
 
 const routes: Routes = [
   {

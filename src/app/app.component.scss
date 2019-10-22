@@ -9,5 +9,9 @@ input[type="number"] {
 }
 
 ion-content{
-  --ion-color-primary: #4890d2;
+  --ion-color-primary: rgb(255, 166, 0);
+}
+
+ion-toolbar {
+  --background: #FFC04E;
 }
