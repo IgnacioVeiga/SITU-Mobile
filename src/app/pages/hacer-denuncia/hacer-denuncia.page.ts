@@ -65,7 +65,7 @@ export class HacerDenunciaPage {
   async denunciar() {
     const toast = await this.toastController.create({
       message: 'Denuncia enviada con exito.',
-      duration: 3000,
+      duration: 3000, // tiempo de duración en milisegundos
       color: 'success',
       buttons: [
         {

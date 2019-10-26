@@ -28,9 +28,19 @@ export class AppComponent {
       icon: 'clock'
     },
     {
-      title: 'Noticias o alertas',
+      title: 'Alertas',
+      url: '/noticias-alertas/alertas',
+      icon: 'notifications'
+    },
+    {
+      title: 'Noticias',
       url: '/noticias-alertas/noticias',
       icon: 'paper'
+    },
+    {
+      title: 'Mi perfil',
+      url: '/mi-perfil',
+      icon: 'contact'
     },
     {
       title: 'Información',

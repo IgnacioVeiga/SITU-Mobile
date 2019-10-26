@@ -4,21 +4,21 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Inicio</ion-title>
+    <ion-icon class="mr-1" name="contact" slot="end" size="large" (click)="goTo('mi-perfil')"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card class="welcome-card">
+  <ion-card class="welcome-card" mode="ios">
     <ion-card-header>
-      <ion-img src="/assets/images/bus.jpg"></ion-img> 
-      <ion-card-title>Bienvenido</ion-card-title>
+      <ion-card-title class="text-center" mode="ios">
+        <ion-img style="width: 100%; height: 90px;" src="/assets/images/logo.png"></ion-img>
+        Bienvenida a SITU
+      </ion-card-title>
     </ion-card-header>
-
-    <ion-card-content>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit,
-        sem ut vivamus tortor in tincidunt metus, quisque dictum id magnis tempus nulla.</p>
-    </ion-card-content>
   </ion-card>
+
+  <ion-img src="/assets/images/bus.jpg"></ion-img>
 
   <ion-list lines="full">
     <ion-list-header>

@@ -1,3 +1,9 @@
+export class ItemDeLista { // lo que conociamos como "ListItem"
+    public id: number;
+    public texto: string;
+    public seleccionado: boolean;
+}
+
 export class InformacionDTO {
     public titulo: string;
     public subtitulo: string;
