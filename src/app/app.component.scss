@@ -8,10 +8,26 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-ion-content{
+ion-content {
   --ion-color-primary: rgb(255, 166, 0);
 }
 
 ion-toolbar {
-  --background: #FFC04E;
+  --background: #ffc04e;
+}
+
+.alert-input-group.sc-ion-alert-md,
+.alert-message.sc-ion-alert-md {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.sc-ion-card-md-h {
+  margin-left: unset;
+  margin-right: unset;
+  -webkit-margin-start: 10px;
+  margin-inline-start: 10px;
+  -webkit-margin-end: 10px;
+  margin-inline-end: 10px;
+  background-color: white;
 }
