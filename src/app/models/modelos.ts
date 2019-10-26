@@ -5,3 +5,11 @@ export class InformacionDTO {
     public fuente: string;
     public fecha: Date;
 }
+
+export class ArchivoDTO {
+    public id: number;
+    public nombre: string;
+    public formato: string;
+    public peso: number;
+    public miniatura: string;
+}
