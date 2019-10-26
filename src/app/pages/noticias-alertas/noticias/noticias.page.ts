@@ -24,7 +24,7 @@ export class NoticiasPage implements OnInit {
   }
 
   generarNoticias() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 12; i++) {
       const info = new InformacionDTO();
       info.titulo = 'Noticia ' + ((i + 1) * 321);
       info.subtitulo = 'Lorem ipsum dolor sit amet consectetur adipiscing elit, sem ut vivamus tortor in tincidunt metus...';

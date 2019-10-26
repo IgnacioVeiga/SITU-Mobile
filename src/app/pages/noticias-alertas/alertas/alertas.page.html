@@ -12,6 +12,8 @@
   <!-- Nota importante: en angular usamos el evento "keyup" y en ionic en cambio usamos "ionInput" -->
   <ion-searchbar (ionInput)='buscar($event)' placeholder="Buscar alertas..." animated inputmode="search">
   </ion-searchbar>
+
+  <!-- Barra de carga -->
   <ion-progress-bar type="indeterminate" *ngIf="cargando"></ion-progress-bar>
 
   <div *ngIf="!cargando">
@@ -32,7 +34,7 @@
               {{info.subtitulo}}
             </small>
           </ion-col>
-          <ion-col>
+          <ion-col size="12">
             {{info.fecha | date: 'dd/MM/yyyy'}}
           </ion-col>
         </ion-row>
