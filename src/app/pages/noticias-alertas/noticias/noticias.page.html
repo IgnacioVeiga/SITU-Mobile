@@ -9,30 +9,34 @@
 </ion-header>
 
 <ion-content>
-  <ion-searchbar placeholder="Buscar noticias..." animated inputmode="search"></ion-searchbar>
-  <ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>
+  <!-- Nota importante: en angular usamos el evento "keyup" y en ionic en cambio usamos "ionInput" -->
+  <ion-searchbar (ionInput)='buscar($event)' placeholder="Buscar noticias..." animated inputmode="search">
+  </ion-searchbar>
+  <ion-progress-bar type="indeterminate" *ngIf="cargando"></ion-progress-bar>
 
-  <div *ngIf="!loading">
+  <div *ngIf="!cargando">
+    <h6 class="text-center" *ngIf="!noticias.length">Sin resultados</h6>
+
     <ion-card *ngFor="let info of noticias">
       <ion-card-content>
         <ion-row>
           <ion-col size="3">
             <ion-thumbnail>
-              <ion-img src="{{info.thumbnail}}" alt="miniatura"></ion-img>
+              <ion-img src="{{info.miniatura}}" alt="miniatura"></ion-img>
             </ion-thumbnail>
           </ion-col>
           <ion-col size="9">
             <ion-text color="dark">
-              <h2>{{info.title}}
-                <ion-icon name="open"></ion-icon>
+              <h2>{{info.titulo}}
+                <ion-icon mode="md" name="open"></ion-icon>
               </h2>
             </ion-text>
             <small>
-              {{info.subtitle}}
+              {{info.subtitulo}}
             </small>
           </ion-col>
           <ion-col>
-            {{info.source}} - {{info.date | date: 'dd/MM/yyyy'}}
+            {{info.fuente}} - {{info.fecha | date: 'dd/MM/yyyy'}}
           </ion-col>
         </ion-row>
       </ion-card-content>
