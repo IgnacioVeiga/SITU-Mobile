@@ -15,4 +15,7 @@ export class MiPerfilPage {
     this.router.navigate(['inicio']);
   }
 
+  guardarCambios() {
+  }
+
 }

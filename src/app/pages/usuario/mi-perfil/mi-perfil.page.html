@@ -9,5 +9,35 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-label>Nombres:</ion-label>
+      <ion-item>
+        <ion-input type="text"></ion-input>
+      </ion-item>
 
+      <ion-label>Apellidos:</ion-label>
+      <ion-item>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <!-- <ion-label>Fecha de nacimiento:</ion-label>
+        <ion-item>
+          <ion-input type="date"></ion-input>
+        </ion-item> -->
+
+      <ion-label>Email:</ion-label>
+      <ion-item>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+
+      <ion-label>DNI:</ion-label>
+      <ion-item>
+        <ion-input type="number"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button color="primary" expand="block" (click)="guardarCambios()">Guardar cambios</ion-button>
+  <ion-button color="medium" expand="block" (click)="goHome()">Cancelar</ion-button>
 </ion-content>

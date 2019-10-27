@@ -43,7 +43,7 @@ import { NoticiasAlertasPageModule } from './pages/noticias-alertas/noticias-ale
   providers: [
     StatusBar,
     SplashScreen,
-    Geolocation,
+    // Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     AlertController
   ],
