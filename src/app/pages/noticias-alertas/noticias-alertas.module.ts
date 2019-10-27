@@ -7,7 +7,7 @@ import { NoticiasAlertasPage } from './noticias-alertas.page';
 
 const routes: Routes = [
   {
-    path: 'noticias-alertas',
+    path: 'tabs',
     component: NoticiasAlertasPage,
     children: [
       {
@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/noticias-alertas/noticias',
+    redirectTo: '/noticias-alertas/tabs/noticias',
     pathMatch: 'full'
   }
 ];

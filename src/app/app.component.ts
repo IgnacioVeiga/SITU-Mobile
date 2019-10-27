@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -29,12 +28,12 @@ export class AppComponent {
     },
     {
       title: 'Alertas',
-      url: '/noticias-alertas/alertas',
+      url: '/noticias-alertas/tabs/alertas',
       icon: 'notifications'
     },
     {
       title: 'Noticias',
-      url: '/noticias-alertas/noticias',
+      url: '/noticias-alertas/tabs/noticias',
       icon: 'paper'
     },
     {
@@ -68,4 +67,5 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
 }
