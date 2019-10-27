@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { NoticiasAlertasPage } from './noticias-alertas.page';
-import { NoticiasPage } from './noticias/noticias.page';
-import { AlertasPage } from './alertas/alertas.page';
 
 const routes: Routes = [
   {
@@ -14,11 +12,11 @@ const routes: Routes = [
     children: [
       {
         path: 'noticias',
-        component: NoticiasPage
+        loadChildren: './noticias/noticias.module#NoticiasPageModule'
       },
       {
         path: 'alertas',
-        component: AlertasPage
+        loadChildren: './alertas/alertas.module#AlertasPageModule'
       },
     ]
   },
@@ -36,9 +34,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [
-    AlertasPage,
-    NoticiasPage
-  ]
+  declarations: [NoticiasAlertasPage]
 })
 export class NoticiasAlertasPageModule { }

@@ -1,14 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { InicioPage } from './inicio/inicio.page';
-import { MiPerfilPage } from './pages/usuario/mi-perfil/mi-perfil.page';
-import { IngresarPage } from './pages/usuario/ingresar/ingresar.page';
-import { RegistrarsePage } from './pages/usuario/registrarse/registrarse.page';
-import { HacerDenunciaPage } from './pages/hacer-denuncia/hacer-denuncia.page';
-import { InfoPage } from './pages/info/info.page';
-import { AyudaPage } from './pages/ayuda/ayuda.page';
-import { HorariosPage } from './pages/horarios/horarios.page';
-import { NoticiasAlertasPage } from './pages/noticias-alertas/noticias-alertas.page';
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -17,49 +8,51 @@ const routes: Routes = [
     pathMatch: 'full'
   },
 
-  // todos
+  // todos,
   {
     path: 'inicio',
-    component: InicioPage
+    loadChildren: './inicio/inicio.module#InicioPageModule'
   },
   {
     path: 'mi-perfil',
-    component: MiPerfilPage
+    loadChildren: './pages/usuario/mi-perfil/mi-perfil.module#MiPerfilPageModule'
   },
   {
     path: 'ingresar',
-    component: IngresarPage
+    loadChildren: './pages/usuario/ingresar/ingresar.module#IngresarPageModule'
   },
 
   // pasajero
   {
     path: 'registrarse',
-    component: RegistrarsePage
+    loadChildren: './pages/usuario/registrarse/registrarse.module#RegistrarsePageModule'
   },
   {
     path: 'hacer-denuncia',
-    component: HacerDenunciaPage
+    loadChildren: './pages/hacer-denuncia/hacer-denuncia.module#HacerDenunciaPageModule'
   },
   {
     path: 'info',
-    component: InfoPage
+    loadChildren: './pages/info/info.module#InfoPageModule'
   },
   {
     path: 'ayuda',
-    component: AyudaPage
+    loadChildren: './pages/ayuda/ayuda.module#AyudaPageModule'
   },
   {
     path: 'noticias-alertas',
-    component: NoticiasAlertasPage
+    loadChildren: './pages/noticias-alertas/noticias-alertas.module#NoticiasAlertasPageModule'
   },
   {
     path: 'horarios',
-    component: HorariosPage
-  },
+    loadChildren: './pages/horarios/horarios.module#HorariosPageModule'
+  }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
