@@ -26,38 +26,35 @@ export class HorariosPage {
   async presentAlertPrompt() {
     this.mostrarHorarios = false;
     const alert = await this.alertController.create({
-      header: 'Seleccione',
+      header: 'Seleccione por favor',
       inputs: [
         {
-          name: 'name1',
+          name: 'linea',
           type: 'text',
+          id: 'linea',
           placeholder: 'Línea'
         },
         {
-          name: 'name2',
+          name: 'recorrido',
           type: 'text',
-          id: 'name2-id',
+          id: 'recorrido',
           placeholder: 'Recorrido'
         }
       ],
       buttons: [
         {
-          text: 'Cancelar',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: () => {
-            console.log('Confirm Cancel');
-          }
-        }, {
           text: 'Mostrar paradas',
           handler: () => {
             this.mostrarHorarios = true;
-            console.log('Confirm Ok');
           }
+        },
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          cssClass: 'secondary'
         }
       ]
     });
-
     await alert.present();
   }
 

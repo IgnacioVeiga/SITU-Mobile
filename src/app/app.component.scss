@@ -32,9 +32,9 @@ ion-toolbar {
   background-color: white;
 }
 
-.vertical-align
-{
-     display: flex!important;
-     align-content: center!important;
-     align-items: center!important;
+.vertical-align // para alininear verticalmente texto en un div
+ {
+  display: flex !important;
+  align-content: center !important;
+  align-items: center !important;
 }

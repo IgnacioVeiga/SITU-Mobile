@@ -9,5 +9,59 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-button color="primary" expand="block" (click)="infoLineas()">
+        <ion-icon name="bus"></ion-icon>
+        Lineas
+        <ion-icon name="bus"></ion-icon>
+      </ion-button>
 
+      <ion-button color="primary" expand="block" (click)="sobreNosotros()">
+        <ion-icon name="code-working"></ion-icon>
+        Acerca de nosotros
+        <ion-icon name="code-working"></ion-icon>
+      </ion-button>
+
+      <div *ngIf="lineas">
+        <ion-item>
+          <ion-label position="floating">Indique la linea: </ion-label>
+          <ion-input value="276"></ion-input>
+        </ion-item>
+
+        <br>
+        <ion-label>Empresa: </ion-label>
+        <ion-item>
+          <p>Compañía La Isleña S.R.L. La Nueva Metropol S.A.</p>
+        </ion-item>
+
+        <br>
+        <ion-label>Teléfono: </ion-label>
+        <ion-item>
+          <a class="text-primary show-pointer">0348 848-7322</a>
+        </ion-item>
+
+        <br>
+        <ion-label>Dirección: </ion-label>
+        <ion-item>
+          <a class="text-primary show-pointer">RP25 3200, Belén de Escobar, Buenos Aires</a>
+        </ion-item>
+      </div>
+
+      <div *ngIf="nosotros">
+        <h5>Sobre nosotros: </h5>
+        <br>
+        <p>
+          M.T Technologies es un grupo dedicado a soluciones tecnologicas.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Aliquam non tincidunt libero, convallis condimentum ex.
+          Vivamus vitae diam ex. Ut sit amet est quis sapien scelerisque hendrerit.
+          Maecenas sit amet sodales mi. In at urna urna. In nisi tellus, luctus vel arcu sit amet,
+          tempus tristique sem. Etiam sed odio diam. Nunc ac sagittis leo. Ut turpis nunc,
+          aliquet suscipit erat sed, convallis ultricies lacus.
+          Aenean congue ex at augue rutrum, at blandit tortor pulvinar.
+        </p>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
