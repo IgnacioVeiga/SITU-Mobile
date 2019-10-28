@@ -46,6 +46,12 @@ const routes: Routes = [
   {
     path: 'horarios',
     loadChildren: './pages/horarios/horarios.module#HorariosPageModule'
+  },
+
+  // chofer
+  {
+    path: 'reporte-chofer',
+    loadChildren: './pages/reporte-chofer/reporte-chofer.module#ReporteChoferPageModule'
   }
 ];
 
