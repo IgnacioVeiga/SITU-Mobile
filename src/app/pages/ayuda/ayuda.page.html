@@ -9,5 +9,38 @@
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Preguntas frecuentes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>¿Cómo hago para denunciar?</ion-label>
+      <ion-item>
+        <p>
+          {{denunciar}}
+        </p>
+      </ion-item>
 
+      <br>
+      <ion-label>¿Cómo veo horarios y recorridos?</ion-label>
+      <ion-item>
+        <p>
+          {{verHorarios}}
+        </p>
+      </ion-item>
+
+      <br>
+      <ion-label>¿Qué son las alertas?</ion-label>
+      <ion-item>
+        <p>
+          {{alertasNoticias}}
+        </p>
+      </ion-item>
+
+      <br>
+      <ion-button color="primary" expand="block" (click)="goTo('info')">
+        Información
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

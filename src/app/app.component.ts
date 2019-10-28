@@ -50,6 +50,13 @@ export class AppComponent {
       title: 'Ayuda',
       url: '/ayuda',
       icon: 'help-buoy'
+    },
+    {
+      title: 'Salir',
+      icon: 'exit',
+      handler: () => {
+        // salir de la app, cerrarla
+      }
     }
   ];
 
