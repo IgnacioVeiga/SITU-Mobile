@@ -18,7 +18,7 @@ export class ReporteChoferPage implements OnInit {
 
   async reportar() {
     const toast = await this.toastController.create({
-      message: 'Reporte enviado con exito al sistema.',
+      message: '¡Reporte enviado con éxito al sistema!',
       duration: 3000, // tiempo de duración en milisegundos
       color: 'success',
       buttons: [

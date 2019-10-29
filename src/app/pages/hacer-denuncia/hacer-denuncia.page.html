@@ -30,7 +30,7 @@
       </ion-radio-group>
 
       <ion-item *ngIf="otroLugar">
-        <ion-label class="mt-3" position="floating">Cuidad:</ion-label>
+        <ion-label class="mt-3" position="floating">Ciudad:</ion-label>
         <ion-input type="text"></ion-input>
       </ion-item>
 
@@ -71,17 +71,17 @@
   <ion-card>
     <ion-card-content>
       <ion-item class="mb-2">
-        <ion-label position="floating">Linea:</ion-label>
+        <ion-label position="floating">Línea:</ion-label>
         <ion-input type="number" value="276"></ion-input>
       </ion-item>
 
       <br>
-      <ion-label>¿Trata sobre un colectivo en especifico?</ion-label>
+      <ion-label>¿Se trata sobre un colectivo en específico?</ion-label>
       <br>
       <div class="vertical-align">
         <ion-label>No</ion-label>
         <ion-toggle class="ml-1 mr-1" [(ngModel)]="colectivoEspecifico"></ion-toggle>
-        <ion-label>Si</ion-label>
+        <ion-label>Sí</ion-label>
       </div>
 
       <ion-item class="mt-3" *ngIf="colectivoEspecifico">
@@ -101,7 +101,7 @@
       <!-- Nota importante: el atributo "disabled" lo dejé entre corchetes para que funcione en chrome por lo menos -->
       <ion-button color="primary" [disabled]="suficientesArchivos" (click)="cargarFoto()">Cargar fotos</ion-button>
       <br>
-      <small>¡Maximo 3 fotos y 5mb en total!</small>
+      <small>¡Máximo 3 fotos y 5mb en total!</small>
       <br>
 
       <ion-row *ngIf="fotos.length > 0">
