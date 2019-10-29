@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 
@@ -6,15 +6,12 @@ import { ToastController } from '@ionic/angular';
   selector: 'app-reporte-chofer',
   templateUrl: './reporte-chofer.page.html'
 })
-export class ReporteChoferPage implements OnInit {
+export class ReporteChoferPage {
 
   constructor(
     private router: Router,
     public toastController: ToastController
   ) { }
-
-  ngOnInit() {
-  }
 
   async reportar() {
     const toast = await this.toastController.create({

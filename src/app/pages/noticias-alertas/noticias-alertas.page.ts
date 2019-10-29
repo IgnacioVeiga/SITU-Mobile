@@ -4,11 +4,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-noticias-alertas',
   templateUrl: './noticias-alertas.page.html'
 })
-export class NoticiasAlertasPage implements OnInit {
+export class NoticiasAlertasPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
