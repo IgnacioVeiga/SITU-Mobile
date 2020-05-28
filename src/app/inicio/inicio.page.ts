@@ -1,18 +1,17 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { ActionSheetController, ToastController } from '@ionic/angular';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
+import { ActionSheetController, ToastController } from "@ionic/angular";
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: 'inicio.page.html'
+  selector: "app-inicio",
+  templateUrl: "inicio.page.html",
 })
 export class InicioPage {
-
   constructor(
     private router: Router,
     public actionSheetController: ActionSheetController,
     public toastController: ToastController
-  ) { }
+  ) {}
 
   goTo(page: string) {
     if (page) {
@@ -22,38 +21,42 @@ export class InicioPage {
 
   async opcionesMiPerfil() {
     const actionSheet = await this.actionSheetController.create({
-      header: 'Mi perfil',
-      buttons: [{
-        text: 'Editar',
-        icon: 'create',
-        handler: () => {
-          this.goTo('mi-perfil');
-        }
-      }, {
-        text: 'Cerrar sesión',
-        icon: 'log-out',
-        handler: () => {
-          this.cerrarSesion();
-        }
-      }]
+      header: "Mi perfil",
+      buttons: [
+        {
+          text: "Editar",
+          icon: "create",
+          handler: () => {
+            this.goTo("mi-perfil");
+          },
+        },
+        {
+          text: "Cerrar sesión",
+          icon: "log-out",
+          handler: () => {
+            this.cerrarSesion();
+          },
+        },
+      ],
     });
     await actionSheet.present();
   }
 
   async cerrarSesion() {
     const toast = await this.toastController.create({
-      message: '¡Sesión cerrada con éxito, hasta luego!',
-      duration: 3000, // tiempo de duración en milisegundos
-      color: 'success',
+      message: "¡Sesión cerrada con éxito, hasta luego!",
+
+      // Duration: tiempo de duración en milisegundos.
+      duration: 3000,
+      color: "success",
       buttons: [
         {
-          side: 'end',
-          icon: 'close'
-        }
-      ]
+          side: "end",
+          icon: "close",
+        },
+      ],
     });
     toast.present();
-    this.goTo('ingresar');
+    this.goTo("ingresar");
   }
-
 }

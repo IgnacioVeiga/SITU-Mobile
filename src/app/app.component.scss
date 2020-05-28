@@ -32,8 +32,8 @@ ion-toolbar {
   background-color: white;
 }
 
-.vertical-align // para alininear verticalmente texto en un div
- {
+// Esta clase es para alininear verticalmente texto en un div
+.vertical-align {
   display: flex !important;
   align-content: center !important;
   align-items: center !important;
