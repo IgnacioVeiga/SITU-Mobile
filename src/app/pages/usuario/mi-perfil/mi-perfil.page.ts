@@ -18,7 +18,7 @@ export class MiPerfilPage {
 
   async guardarCambios() {
     const toast = await this.toastController.create({
-      message: "¡Perfil editado con éxito!",
+      message: "Perfil editado con éxito!",
       // Duration: tiempo de duración en milisegundos.
       duration: 3000,
       color: "success",

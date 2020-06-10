@@ -44,8 +44,7 @@ export class InicioPage {
 
   async cerrarSesion() {
     const toast = await this.toastController.create({
-      message: "¡Sesión cerrada con éxito, hasta luego!",
-
+      message: "Sesión cerrada con éxito, hasta luego!",
       // Duration: tiempo de duración en milisegundos.
       duration: 3000,
       color: "success",

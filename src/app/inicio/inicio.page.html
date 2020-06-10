@@ -4,7 +4,13 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>Inicio</ion-title>
-    <ion-icon class="mr-1" name="contact" slot="end" size="large" (click)="opcionesMiPerfil()"></ion-icon>
+    <ion-icon
+      class="mr-1"
+      name="contact"
+      slot="end"
+      size="large"
+      (click)="opcionesMiPerfil()"
+    ></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -12,19 +18,28 @@
   <ion-card class="welcome-card" mode="ios">
     <ion-card-header>
       <ion-card-title class="text-center" mode="ios">
-        <ion-img style="width: 100%; height: 90px;" src="/assets/images/logo.png"></ion-img>
+        <ion-img
+          style="width: 100%; height: 90px;"
+          src="/assets/images/logo.png"
+        ></ion-img>
         Bienvenida a SITU
       </ion-card-title>
     </ion-card-header>
   </ion-card>
 
-  <ion-button color="danger" expand="full" size="large" (click)="goTo('reporte-chofer')">Reportar incidencia</ion-button>
+  <ion-button
+    color="danger"
+    expand="full"
+    size="large"
+    (click)="goTo('reporte-chofer')"
+    >Reportar incidencia</ion-button
+  >
 
   <ion-img src="/assets/images/bus.jpg"></ion-img>
 
   <ion-list lines="full">
     <ion-list-header>
-      <ion-label>¿En qué te podemos ayudar?</ion-label>
+      <ion-label>En qu� te podemos ayudar?</ion-label>
     </ion-list-header>
 
     <ion-item (click)="goTo('hacer-denuncia')">
