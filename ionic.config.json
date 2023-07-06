@@ -1,7 +1,7 @@
 {
-  "name": "situ-mobile",
+  "name": "SITU Mobile",
   "integrations": {
-    "cordova": {}
+    "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular-standalone"
 }

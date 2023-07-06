@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>my-profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">My perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-avatar>
+        <img alt="Foto de perfil" src="/assets/images/sinfoto.png">
+      </ion-avatar>
+
+      <ion-item>
+        <ion-label>Nombre/s: </ion-label>
+        <p>Natalia</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Apellido/s: </ion-label>
+        <p>Natalia</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>DNI: </ion-label>
+        <p>00.000.000</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Edad: </ion-label>
+        <p>40</p>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" value="myemail@example.com"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Repetir contraseña</ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button color="primary" expand="block" (click)="guardarCambios()">Guardar cambios</ion-button>
+  <ion-button color="medium" expand="block" (click)="goHome()">Cancelar</ion-button>
+</ion-content>

@@ -1,20 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info',
-  templateUrl: './info.page.html'
+  templateUrl: './info.page.html',
+  styleUrls: ['./info.page.scss'],
+  standalone: true,
+  imports: [IonicModule, CommonModule, FormsModule]
 })
-export class InfoPage {
-  nosotros: boolean;
-  lineas: boolean;
+export class InfoPage implements OnInit {
+  nosotros: boolean = true;
+  lineas: boolean = false;
 
-  constructor(
-    private router: Router
-  ) { }
+  constructor(private router: Router) { }
+
+  ngOnInit() {
+  }
 
   goHome() {
-    this.router.navigate(['inicio']);
+    this.router.navigate(['home']);
   }
 
   infoLineas() {
@@ -23,8 +30,8 @@ export class InfoPage {
   }
 
   sobreNosotros() {
-      this.lineas = false;
-      this.nosotros = !this.nosotros;
+    this.lineas = false;
+    this.nosotros = !this.nosotros;
   }
 
 }

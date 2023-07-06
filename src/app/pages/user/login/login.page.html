@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ingresar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-row>
+    <ion-col size="3"></ion-col>
+    <ion-col size="4">
+      <ion-img style="width: 120px" alt="SITU logo" src="/assets/images/logo.png"></ion-img>
+    </ion-col>
+    <ion-col size="2"></ion-col>
+  </ion-row>
+
+  <ion-item>
+    <ion-label position="floating">DNI</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-img width="100" alt="recaptcha" src="/assets/images/recaptcha.png"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-checkbox></ion-checkbox> Mantener sesión
+    </ion-col>
+  </ion-row>
+
+  <ion-button color="primary" expand="block" (click)="goTo('home')">Ingresar</ion-button>
+
+  <ion-button color="medium" expand="block" (click)="goTo('home')">Omitir</ion-button>
+
+  <ion-row>
+    <ion-col size="12">
+      <p>¿Nuevo en Situ?<a (click)="goTo('sign-up')">Registrate</a></p>
+    </ion-col>
+  </ion-row>
+</ion-content>

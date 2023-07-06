@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>sign-up</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrarse</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-img style="width: 120px" alt="SITU logo" src="/assets/images/logo.png"></ion-img>
+
+  <ion-item>
+    <ion-label position="floating">DNI</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Repetir email</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Repetir contraseña</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+
+  <ion-img width="100" alt="recaptcha" src="/assets/images/recaptcha.png"></ion-img>
+
+  <ion-button color="primary" expand="block" (click)="goTo('home')">Registrar</ion-button>
+  <ion-button color="medium" expand="block" (click)="goTo('login')">Volver</ion-button>
+</ion-content>

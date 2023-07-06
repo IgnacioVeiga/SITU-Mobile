@@ -1,20 +1,19 @@
-import { Component, ViewEncapsulation } from "@angular/core";
-import { Platform } from "@ionic/angular";
-import { SplashScreen } from "@ionic-native/splash-screen/ngx";
-import { StatusBar } from "@ionic-native/status-bar/ngx";
-
+import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { IonicModule, Platform } from '@ionic/angular';
 @Component({
-  selector: "app-root",
-  templateUrl: "app.component.html",
-  styleUrls: ["app.component.scss"],
-  encapsulation: ViewEncapsulation.None,
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  styleUrls: ['app.component.scss'],
+  standalone: true,
+  imports: [IonicModule, RouterLink, RouterLinkActive, CommonModule],
 })
 export class AppComponent {
-  // Sidebar
   public appPages = [
     {
       title: "Inicio",
-      url: "/inicio",
+      url: "/home",
       icon: "home",
     },
     {
@@ -23,23 +22,23 @@ export class AppComponent {
       icon: "warning",
     },
     {
+      title: "Reportar incidente",
+      url: "/driver-report",
+      icon: "warning",
+    },
+    {
       title: "Horarios",
-      url: "/horarios",
+      url: "/schedules",
       icon: "clock",
     },
     {
       title: "Alertas",
-      url: "/noticias-alertas/tabs/alertas",
+      url: "/alerts",
       icon: "notifications",
     },
     {
-      title: "Noticias",
-      url: "/noticias-alertas/tabs/noticias",
-      icon: "paper",
-    },
-    {
       title: "Mi perfil",
-      url: "/mi-perfil",
+      url: "/my-profile",
       icon: "contact",
     },
     {
@@ -49,7 +48,7 @@ export class AppComponent {
     },
     {
       title: "Ayuda",
-      url: "/ayuda",
+      url: "/help",
       icon: "help-buoy",
     },
     {
@@ -58,21 +57,21 @@ export class AppComponent {
       handler: () => {
         // TODO: debe poder salirse de la app.
       },
-    },
+    }
   ];
 
   constructor(
     private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    // private statusBar: StatusBar
+    // private splashScreen: SplashScreen
   ) {
     this.initializeApp();
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
+      // this.statusBar.styleDefault();
+      // this.splashScreen.hide();
     });
   }
 }
