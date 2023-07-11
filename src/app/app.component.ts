@@ -18,7 +18,7 @@ export class AppComponent {
     },
     {
       title: "Hacer denuncia",
-      url: "/hacer-denuncia",
+      url: "/user-report",
       icon: "warning",
     },
     {
@@ -29,27 +29,27 @@ export class AppComponent {
     {
       title: "Horarios",
       url: "/schedules",
-      icon: "clock",
+      icon: "time",
     },
     {
       title: "Alertas",
       url: "/alerts",
-      icon: "notifications",
+      icon: "alert-circle",
     },
     {
       title: "Mi perfil",
       url: "/my-profile",
-      icon: "contact",
+      icon: "person-circle",
     },
     {
       title: "Información",
       url: "/info",
-      icon: "information-circle-outline",
+      icon: "information-circle",
     },
     {
       title: "Ayuda",
       url: "/help",
-      icon: "help-buoy",
+      icon: "help-circle",
     },
     {
       title: "Salir",

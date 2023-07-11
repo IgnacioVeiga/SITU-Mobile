@@ -1,20 +1,14 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>info</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Información</ion-title>
+    <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Información</ion-title>
-      <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-card>
     <ion-card-content>
       <ion-button color="primary" expand="block" (click)="infoLineas()">

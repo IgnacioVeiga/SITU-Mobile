@@ -1,22 +1,16 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>schedules</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Horarios
+    </ion-title>
+    <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        Horarios
-      </ion-title>
-      <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
-    </ion-toolbar>
-  </ion-header>
-
   <ion-row>
     <ion-row class="mapouter">
       <div class="gmap_canvas"><iframe id="gmap_canvas"

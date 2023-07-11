@@ -1,15 +1,14 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>driver-report</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Reportar</ion-title>
+    <ion-icon name="arrow-back" mode="ios" slot="end" size="large" (click)="goHome()"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Reportar</ion-title>
-    </ion-toolbar>
-  </ion-header>
   <ion-button color="danger" expand="full">Omitir y llamar directamente</ion-button>
 
   <ion-card>
