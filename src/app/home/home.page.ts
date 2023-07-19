@@ -12,6 +12,7 @@ import { Router } from "@angular/router";
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class HomePage implements OnInit {
+  username: string = '';
 
   constructor(
     private router: Router,
@@ -19,7 +20,9 @@ export class HomePage implements OnInit {
     public toastController: ToastController) { }
 
   ngOnInit() {
+    this.username = localStorage.getItem('username') as string;
   }
+
   goTo(page: string) {
     if (page) {
       this.router.navigate([page]);

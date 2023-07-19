@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Inicio</ion-title>
-    <ion-icon name="contact" slot="end" size="large"></ion-icon>
+    <ion-icon name="person-circle" slot="end" size="large"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +10,7 @@
     <ion-card-header>
       <ion-card-title class="text-center" mode="ios">
         <ion-img style="width: 100%; height: 90px;" src="/assets/images/logo.png"></ion-img>
-        ¡Te damos la bienvenida a SITU!
+        ¡Hola {{this.username}}! Te damos la bienvenida a SITU
       </ion-card-title>
     </ion-card-header>
   </ion-card>
@@ -25,7 +25,7 @@
     </ion-list-header>
 
     <ion-item>
-      <ion-icon slot="start" name="user-report" color="medium"></ion-icon>
+      <ion-icon slot="start" name="warning" color="medium"></ion-icon>
       <ion-label class="ion-text-wrap">Hacer una denuncia</ion-label>
     </ion-item>
 
